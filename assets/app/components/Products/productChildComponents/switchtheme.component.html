@@ -1,0 +1,59 @@
+<!--<div class="row">
+    <div *ngFor="let item of ThemeArray">
+        <span *ngIf="item!='donotdelete.txt'">
+    <div class="col-md-3">
+        <a  href="https://adminthemeapp.herokuapp.com/push_to_server/switchToTheme/{{item}}" class="btn bg-submit btn-block">{{item}}</a>
+    </div>
+    </span>
+    </div>-->
+
+
+<!--</div>-->
+<!--<div class="row">
+    <div *ngFor="let item of ThemeArray">
+        <span *ngIf="item!='donotdelete.txt'">
+    <div class="col-md-3">
+        <a  [ngClass]="{'active activeclass':(item==current_theme)}" (click)="switchTheme(item[0])"  class="btn bg-submit btn-block">Apply now</a>
+    </div>
+    </span>
+    </div>
+</div>-->
+<div class="row">
+    <div class="col-md-12">
+	<div class="width-20 no-attachments" *ngIf="ThemeArraylength==0">
+*No Themes Found
+</div>
+        <span *ngFor="let item of ThemeArray">
+            <span *ngIf="item!='donotdelete.txt'">
+        <div class="card col-md-4" [ngClass]="{'activeclass':(item==current_theme)}">
+            <img id="myImg" class="card-img-top" src="/assets/images/{{item}}.jpg" alt="template" style="height:196px;width:311px;">
+
+            <div [hidden]="(item==current_theme)" class="card-block">
+                <a (click)="switchTheme(item)" class="btn btn-primary">Apply now</a>
+            </div>
+            <div [hidden]="!(item==current_theme)" class="card-block">
+                <button type="button"  class="btn btn-primary" disabled>Current Theme</button>
+            </div>
+
+        </div>
+            </span>
+    </span>
+        <div id="myModal1" class="modal1">
+            <span class="close3">&times;</span>
+            <img class="modal2-content" id="img01">
+        </div>
+    </div>
+</div>
+	<div class="modal" id="processData_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content modal_align_c">
+			<div class="modal-header ">
+                <button [hidden]="processData" data-dismiss="modal"  (click)="reset()" class="btn btn-danger pull-right">close</button>
+				<h4 class="modal-title" id="largeModalHead">Switching Theme</h4>
+			</div>
+			<div class="modal-body">
+				<img src="https://media.giphy.com/media/7F2cuTDGn9pmw/giphy.gif" width="500" height="500">
+			</div>
+		</div>
+	</div>
+</div>

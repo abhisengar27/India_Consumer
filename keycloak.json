@@ -1,0 +1,11 @@
+{
+  "realm": "master",
+  "realm-public-key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZOoXV/PcZeqSdljGWlNTckGqvF+s7sfyVJs02Aj/JgyMM9wcGkIP+kjLxelJb8eZ9qy14wLCTI9IThByo7tMBIKi86QrAPlOASNBsyQHLoSwGUBNdJhqIFiLeKudss3n5TE/XmX1veJGilSedxJ/cDwei1KAjF7lVhJE6+1RX0jO0Xmr/6/rnvYmERQq5Sfa/ZNqEegowZVmuzW2wWuQ2quLpkX4fOQnHvc2BGZqHfh1HoekbqdotkDKxiE9NVHMIyWglSyur8BuKpooOk1fLqysVycwa5ytHbiXwSUy1d7zXiAbPgOglX8CjQCRJZJg+SalyyEaOQceY3NarF23QIDAQAB",
+  "auth-server-url": "http://52.15.47.203:8280/auth",
+  "ssl-required": "external",
+  "resource": "oaoindia",
+  "credentials": {
+    "secret": "a1bf5c52-1012-46b1-9d2c-4bebdcd04320"
+  },
+  "policy-enforcer": {}
+}

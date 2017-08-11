@@ -1,0 +1,13 @@
+{
+    "url": {
+        "cmis_alfresco_url": "http://106.51.72.98:8180/alfresco/cmisbrowser",
+        "alfresco_download_url": "http://106.51.72.98:8180/alfresco",
+        "alfresco_username": "empOnbrdInd",
+        "alfresco_password": "admin",
+        "alfresco_folder_id": "70a5428c-19c5-493f-8909-6534c98cef24",
+        "clientUrl": "https://oaotestapp.herokuapp.com",
+        "adminUrl": "https://empoweronboardadmini.herokuapp.com"
+    },
+    "office365LoginEnabled": "Y",
+    "country": "IND"
+}
